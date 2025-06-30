@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Job Search Form</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <fieldset>
+      <h1 id="title">Job Search Form</h1>
+      <p id="description">Fill out this form to find jobs perfect for you!</p>
+    </fieldset>
+    <fieldset>
+      <form id="survey-form">
+        <label id="name-label" class="question">Enter your name: <input id="name" type="text" placeholder="Your name" required>
+        <label id="email-label" class="question">Enter your email: <input id="email" type="email" placeholder="1234abcd@gmail.com" required>
+        <label id="number-label" class="question">What is your age? <input id="number" type="number" min="16" max="100" placeholder="16" required>
+        <label for="dropdown" class="question">What kind of job are you looking for? 
+          <select id="dropdown" required>
+            <option value="">(Select One)</option>
+            <option value="1">Full-time</option>
+            <option value="2">Part-time</option>
+            <option value="3">Summer job</option>
+            <option value="4">Internship</option>
+          </select>
+        </label>
+        <label for="exp" class="radio"> Do you have work experience? <input type="radio" id="exp" name="exp" value="Y">Yes</label>
+        <label for="exp" class="radio"><input type="radio" id="exp" name="exp" value="N" checked>No</label>
+        <label for="field" class="question">What areas of work are you interested in? 
+          <input type="checkbox" id="field" value="food"> Fast Food
+          <input type="checkbox" id="field" value="med"> Medical
+          <input type="checkbox" id="field" value="eng"> Engineering
+          <input type="checkbox" id="field" value="gov"> Government
+          <input type="checkbox" id="field" value="edu"> Education
+          <input type="checkbox" id="field" value="ret"> Retail
+        </label>
+        <label for="resume" class="question">Resume:
+          <textarea id="resume">Place any relevant work experience, skills or certifications here.
+          </textarea>
+        </label>
+        <input type="submit" id="submit" value="Submit">
+      </form>
+    </fieldset>
+  </body>
+</html>
